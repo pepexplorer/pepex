@@ -1,0 +1,17 @@
+{
+  "name": "PEPE XPLORER Token",
+  "symbol": "PEPEX",
+  "description": "The revolutionary token with auto-burn & secret rewards - Powered by Solana",
+  "image": "https://yourdomain.com/pepex-golden.png",
+  "external_url": "https://pepexplorer.github.io/pepex/",
+  "attributes": [
+    {
+      "trait_type": "Magic",
+      "value": "Auto-Gifts"
+    },
+    {
+      "trait_type": "Burn",
+      "value": "0.5% per tx"
+    }
+  ]
+}
