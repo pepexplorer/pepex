@@ -1,9 +1,9 @@
 {
-  "name": "PEPEX Golden Token",
+  "name": "PEPE XPLORER Token",
   "symbol": "PEPEX",
   "description": "The revolutionary token with auto-burn & secret rewards - Powered by Solana",
   "image": "https://raw.githubusercontent.com/pepexplorer/pepex/main/assets/logos/4dqZbYECcacyV6M928jtHWC3N5SWTSsnXrq4tsohTU3Z.png",
-  "external_url": "https://pepex.io",
+  "external_url": "https://pepexplorer.github.io/pepex/",
   "attributes": [
     {
       "trait_type": "Magic",
