@@ -1,13 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PEPEX Golden Token</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEPEX | The Solana Meme Rocket</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>PEPEX Token</h1>
-  <p>The revolutionary token with Auto-Burn and Secret Rewards - Powered by Solana.</p>
-  <img src="https://raw.githubusercontent.com/pepexplorer/pepex/main/assets/logos/4dqZbYECcacyV6M928jtHWC3N5SWTSsnXrq4tsohTU3Z.png" alt="PEPEX Logo" width="200">
+  <header class="header">
+    <img src="pepex-logo.png" alt="Pepex Logo" class="logo" />
+    <h1>PEPEX</h1>
+    <button id="connect-wallet" class="wallet-btn">Connect Wallet</button>
+  </header>
+
+  <section class="hero">
+    <h2>The Meme Rocket of Solana</h2>
+    <p>21,000,000 total supply. Fair launch. Community powered. Charity backed.</p>
+    <a href="airdrop.html" class="airdrop-btn">Join Airdrop</a>
+  </section>
+
+  <section class="countdown">
+    <h3>Airdrop Countdown</h3>
+    <div id="timer">Loading...</div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 PEPEX. All rights reserved.</p>
+  </footer>
 </body>
 </html>
 
+<!-- styles.css -->
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0c0c0c;
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  background-color: #121212;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.wallet-btn {
+  background: #9945ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero {
+  padding: 4rem 1rem;
+}
+
+.airdrop-btn {
+  display: inline-block;
+  background: #14f195;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.countdown {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #121212;
+  color: #777;
+  font-size: 0.9rem;
+}
+</style>
+
+<!-- script.js -->
+<script>
+// Countdown Timer
+const timer = document.getElementById('timer');
+const launchDate = new Date("April 29, 2025 00:00:00").getTime();
+
+const updateTimer = () => {
+  const now = new Date().getTime();
+  const distance = launchDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  if (distance < 0) {
+    timer.innerHTML = "🚀 Airdrop is Live!";
+    clearInterval(interval);
+  }
+};
+
+const interval = setInterval(updateTimer, 1000);
+updateTimer();
+
+// Phantom Wallet Connect
+const connectButton = document.getElementById("connect-wallet");
+connectButton.addEventListener("click", async () => {
+  try {
+    const resp = await window.solana.connect();
+    connectButton.innerText = resp.publicKey.toString();
+  } catch (err) {
+    console.error("Wallet connection failed", err);
+  }
+});
+</script>
