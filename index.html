@@ -3,113 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PEPEX | Solana Meme Token</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Orbitron', sans-serif;
-    }
-    body {
-      background: #0a0a0a; color: white;
-    }
-    header {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 20px 40px; background: #111;
-      border-bottom: 1px solid #444;
-    }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      margin-left: 20px; text-decoration: none;
-      color: #00ffcc; transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffffff;
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 48px;
-      color: #00ffcc;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    section {
-      padding: 60px 40px;
-      border-bottom: 1px solid #333;
-    }
-    h2 {
-      color: #00ffcc;
-      margin-bottom: 20px;
-    }
-    footer {
-      padding: 20px;
-      text-align: center;
-      background: #111;
-      color: #666;
-    }
-  </style>
+  <title>PEPEX | The Solana Meme Rocket</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="63ab1b01-6878-40d9-80d8-312faa3e68f8.png" alt="PEPEX Logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#tokenomics">Tokenomics</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#airdrop">Airdrop</a>
-      <a href="#community">Community</a>
-    </nav>
+  <header class="header">
+    <img src="pepex-logo.png" alt="Pepex Logo" class="logo" />
+    <h1>PEPEX</h1>
+    <button id="connect-wallet" class="wallet-btn">Connect Wallet</button>
   </header>
 
-  <div class="hero">
-    <h1>PEPEX on Solana</h1>
-    <p>The meme coin of the future. Powered by Solana. Loved by the community.</p>
-  </div>
-
-  <section id="about">
-    <h2>About PEPEX</h2>
-    <p>PEPEX is a meme token built on the Solana blockchain. With limited supply, powerful branding, and strong community focus, it’s designed to bring fun and value to Web3.</p>
+  <section class="hero">
+    <h2>The Meme Rocket of Solana</h2>
+    <p>21,000,000 total supply. Fair launch. Community powered. Charity backed.</p>
+    <a href="airdrop.html" class="airdrop-btn">Join Airdrop</a>
   </section>
 
-  <section id="tokenomics">
-    <h2>Tokenomics</h2>
-    <ul>
-      <li>21,000,000 Total Supply</li>
-      <li>20% Locked (2 years)</li>
-      <li>10% Charity</li>
-      <li>30% Airdrop & Rewards</li>
-      <li>20% Private Sale</li>
-      <li>15% Marketing</li>
-      <li>5% Initial Circulation</li>
-    </ul>
+  <section class="countdown">
+    <h3>Airdrop Countdown</h3>
+    <div id="timer">Loading...</div>
   </section>
 
-  <section id="roadmap">
-    <h2>Roadmap</h2>
-    <p>Q2 2025: Launch & Airdrop<br>Q3 2025: NFT Collection & Listings<br>Q4 2025: Partnerships & Burn Events<br>2026: GameFi, DAO & More!</p>
-  </section>
-
-  <section id="airdrop">
-    <h2>Airdrop</h2>
-    <p>Join the airdrop and earn free PEPEX tokens! Stay tuned for the countdown and requirements.</p>
-  </section>
-
-  <section id="community">
-    <h2>Community</h2>
-    <p>Follow us on Twitter, Telegram, and Discord to join the PEPEX army!</p>
-  </section>
-
-  <footer>
-    &copy; 2025 PEPEX. All rights reserved.
+  <footer class="footer">
+    <p>© 2025 PEPEX. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
+<!-- styles.css -->
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0c0c0c;
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  background-color: #121212;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.wallet-btn {
+  background: #9945ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero {
+  padding: 4rem 1rem;
+}
+
+.airdrop-btn {
+  display: inline-block;
+  background: #14f195;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.countdown {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background-color: #121212;
+  color: #777;
+  font-size: 0.9rem;
+}
+</style>
+
+<!-- script.js -->
+<script>
+// Countdown Timer
+const timer = document.getElementById('timer');
+const launchDate = new Date("April 29, 2025 00:00:00").getTime();
+
+const updateTimer = () => {
+  const now = new Date().getTime();
+  const distance = launchDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  if (distance < 0) {
+    timer.innerHTML = "🚀 Airdrop is Live!";
+    clearInterval(interval);
+  }
+};
+
+const interval = setInterval(updateTimer, 1000);
+updateTimer();
+
+// Phantom Wallet Connect
+const connectButton = document.getElementById("connect-wallet");
+connectButton.addEventListener("click", async () => {
+  try {
+    const resp = await window.solana.connect();
+    connectButton.innerText = resp.publicKey.toString();
+  } catch (err) {
+    console.error("Wallet connection failed", err);
+  }
+});
+</script>
