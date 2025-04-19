@@ -1,115 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luxury Wallet</title>
-  <!-- FontAwesome for Social Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEPEX - Meme to Moon</title>
   <style>
-    :root {
-      --gold: #D4AF37;
-      --black: #121212;
-      --gray: #F5F5F5;
-    }
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: var(--gray);
-      color: var(--black);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      padding: 0;
     }
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 5%;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .logo h1 {
-      font-weight: 300;
-      letter-spacing: 1px;
-    }
-    .wallet {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    .wallet img {
-      height: 24px;
-      margin-right: 8px;
-    }
-    .wallet span {
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .hero {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
-      flex: 1;
+      padding: 40px 20px;
     }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 30px 0;
-      background: white;
+    header img.logo {
+      width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px #00ff99;
     }
-    .social-links a {
-      color: var(--black);
-      font-size: 20px;
-      transition: color 0.3s;
+    header h1 {
+      font-size: 3rem;
+      margin: 20px 0 10px;
+      color: #00ff99;
     }
-    .social-links a:hover {
-      color: var(--gold);
+    header p.subtitle {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 10px;
     }
-    footer {
+    header p.slogan {
+      font-size: 1.1rem;
+      color: #cccccc;
+    }
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 36px;
+      height: 36px;
+    }
+    .btn {
+      display: inline-block;
+      background: #00ff99;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #00cc77;
+    }
+    .btn-claim {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 14px 28px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 40px;
+      text-decoration: none;
+      margin: 30px auto 0;
+      transition: background-color 0.3s;
+    }
+    .btn-claim:hover {
+      background-color: #ffaa00;
+    }
+    section {
+      padding: 40px;
+      background-color: #0f1117;
+    }
+    h2, h3 {
+      color: #00ff99;
+    }
+    ul, p {
+      color: #cccccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #161b22;
+      color: #ffffff;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      background-color: #00ff99;
+      color: #000;
+    }
+    .footer {
       text-align: center;
-      padding: 20px;
-      font-size: 12px;
+      padding: 30px;
+      font-size: 0.9rem;
+      background-color: #0b0c10;
       color: #777;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://via.placeholder.com/40x40" alt="Brand Logo">
-      <h1>VÉRITÉ</h1>
+    <img class="logo" src="logo.png" alt="PEPEX Logo">
+    <h1>PEPEX</h1>
+    <p class="subtitle">Like Bitcoin, Only 21 Million</p>
+    <p class="slogan">Fueling the Memechain, One Burn at a Time 🧨</p>
+    <div class="social-icons">
+      <a href="https://x.com/pepexplore" target="_blank"><img src="x-icon.png" alt="X"></a>
+      <a href="https://instagram.com/pepex_community" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://t.me/pepexplorers" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a>
+      <a href="mailto:pepexplorergil@gmail.com"><img src="email-icon.png" alt="Email"></a>
     </div>
-    <div class="wallet">
-      <img src="https://via.placeholder.com/24x24" alt="Wallet Icon">
-      <span>My Wallet</span>
-    </div>
+    <a class="btn" href="https://x.com/pepexplore" target="_blank">Follow us on X</a>
+    <br>
+    <a class="btn-claim" href="https://claim.pepexplorer.com" target="_blank">🚀 Claim Your Airdrop</a>
   </header>
 
-  <section class="hero">
-    <h2>Luxury, Redefined</h2>
-    <p>Discover our exclusive collection of minimalist wallets crafted from premium Italian leather. Less is more.</p>
-    <button class="cta">SHOP NOW</button>
+  <section>
+    <h2>🚀 Tokenomics Review & Community Suggestions</h2>
+    <ul>
+      <li><strong>Team (20% = 4.2M):</strong> Suggested: 10% + 2 years lock 🔒</li>
+      <li><strong>Charity (10% = 2.1M):</strong> Excellent! → Transparent wallet + donation reports 📜</li>
+      <li><strong>Marketing (20% = 4.2M):</strong> Better: 10% liquid + 10% vested monthly</li>
+      <li><strong>Holders (20% = 4.2M):</strong> Should increase → 30% with staking rewards 💰</li>
+      <li><strong>Airdrop (30% = 6.3M):</strong> Risky → Recommend: 15% airdrop + 15% private sale</li>
+    </ul>
+
+    <h3>🎯 Suggested Optimized Distribution:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>%</th>
+          <th>Tokens</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Team</td><td>10%</td><td>2.1M</td><td>Locked for 2 years</td></tr>
+        <tr><td>Charity</td><td>10%</td><td>2.1M</td><td>Transparent wallet</td></tr>
+        <tr><td>Marketing</td><td>15%</td><td>3.15M</td><td>5% liquid + 10% vested</td></tr>
+        <tr><td>Holders</td><td>30%</td><td>6.3M</td><td>Staking rewards</td></tr>
+        <tr><td>Airdrop</td><td>15%</td><td>3.15M</td><td>Task-based airdrop</td></tr>
+        <tr><td>Private Sale</td><td>20%</td><td>4.2M</td><td>Low price for early supporters</td></tr>
+      </tbody>
+    </table>
+
+    <h3>💎 Unique Features of PEPEX</h3>
+    <ul>
+      <li><strong>Smart Burn:</strong> 0.5% of all transactions are burned monthly – scarcity FTW 🔥</li>
+      <li><strong>Astronaut Rewards:</strong> Hold for 1 year = get exclusive NFT (Moon Pepe!) 🚀</li>
+    </ul>
+
+    <h3>📢 Free Marketing Strategy</h3>
+    <ul>
+      <li><strong>Twitter:</strong> Meme contest with #PepexToTheMoon | Retweet to win 1000 PEPEX</li>
+      <li><strong>Telegram:</strong> VIP group for holders with 10K+ PEPEX</li>
+      <li><strong>Reddit:</strong> Monthly AMA with the team</li>
+    </ul>
+
+    <h3>📈 Listing Soon</h3>
+    <p>PEPEX will be listed on all major exchanges soon. Stay tuned!</p>
   </section>
 
-  <!-- Social Links Section -->
-  <div class="social-links">
-    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://t.me/" target="_blank"><i class="fab fa-telegram"></i></a>
+  <div class="footer">
+    PEPEX © 2025 – Built for the Community | Telegram: <a href="https://t.me/pepexplorers" style="color: #00ff99">@pepexplorers</a>
   </div>
-
-  <footer>
-    © 2023 VÉRITÉ. All rights reserved.
-  </footer>
 </body>
 </html>
