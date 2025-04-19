@@ -3,132 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PEPEX | The Solana Meme Rocket</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <title>PEPEX - Meme to Moon</title>
+  <style>
+    body {
+      background-color: #0b0c10;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00ff99;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
+      color: #00ff99;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+    section {
+      padding: 40px;
+      background-color: #0f1117;
+    }
+    h2 {
+      color: #00ff99;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #161b22;
+      color: #ffffff;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      background-color: #00ff99;
+      color: #000;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      background-color: #0b0c10;
+      color: #777;
+    }
+    .btn {
+      display: inline-block;
+      background: #00ff99;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-        <img crossorigin="anonymous" 
-     src="https://raw.githubusercontent.com/pepexplorer/pepex/main/assets/mainnet/4dqZbYECcacyV6M928jtHWC3N5SWTSsnXrq4tsohTU3Z/logo.png"
-     alt="PEPEX Logo"
-     width="200">  
+  <header>
+    <img src="logo.png" alt="PEPEX Logo">
     <h1>PEPEX</h1>
-    <button id="connect-wallet" class="wallet-btn">Connect Wallet</button>
+    <p>Fueling the Memechain, One Burn at a Time 🧨</p>
+    <a class="btn" href="https://x.com/pepexplore" target="_blank">Follow us on X (ex-Twitter)</a>
   </header>
 
-  <section class="hero">
-    <h2>The Meme Rocket of Solana</h2>
-    <p>21,000,000 total supply. Fair launch. Community powered. Charity backed.</p>
-    <a href="airdrop.html" class="airdrop-btn">Join Airdrop</a>
+  <section>
+    <h2>🚀 Tokenomics Review & Community Suggestions</h2>
+    <ul>
+      <li><strong>Team (20% = 4.2M):</strong> Suggested: 10% + 2 years lock 🔒</li>
+      <li><strong>Charity (10% = 2.1M):</strong> Excellent! → Transparent wallet + donation reports 📜</li>
+      <li><strong>Marketing (20% = 4.2M):</strong> Better: 10% liquid + 10% vested monthly</li>
+      <li><strong>Holders (20% = 4.2M):</strong> Should increase → 30% with staking rewards 💰</li>
+      <li><strong>Airdrop (30% = 6.3M):</strong> Risky → Recommend: 15% airdrop + 15% private sale</li>
+    </ul>
+
+    <h3>🎯 Suggested Optimized Distribution:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>%</th>
+          <th>Tokens</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Team</td><td>10%</td><td>2.1M</td><td>Locked for 2 years</td></tr>
+        <tr><td>Charity</td><td>10%</td><td>2.1M</td><td>Transparent wallet</td></tr>
+        <tr><td>Marketing</td><td>15%</td><td>3.15M</td><td>5% liquid + 10% vested</td></tr>
+        <tr><td>Holders</td><td>30%</td><td>6.3M</td><td>Staking rewards</td></tr>
+        <tr><td>Airdrop</td><td>15%</td><td>3.15M</td><td>Task-based airdrop</td></tr>
+        <tr><td>Private Sale</td><td>20%</td><td>4.2M</td><td>Low price for early supporters</td></tr>
+      </tbody>
+    </table>
+
+    <h3>💎 Unique Features of PEPEX</h3>
+    <ul>
+      <li><strong>Smart Burn:</strong> 0.5% of all transactions are burned monthly – scarcity FTW 🔥</li>
+      <li><strong>Astronaut Rewards:</strong> Hold for 1 year = get exclusive NFT (Moon Pepe!) 🚀</li>
+    </ul>
+
+    <h3>📢 Free Marketing Strategy</h3>
+    <ul>
+      <li><strong>Twitter:</strong> Meme contest with #PepexToTheMoon | Retweet to win 1000 PEPEX</li>
+      <li><strong>Telegram:</strong> VIP group for holders with 10K+ PEPEX</li>
+      <li><strong>Reddit:</strong> Monthly AMA with the team</li>
+    </ul>
   </section>
 
-  <section class="countdown">
-    <h3>Airdrop Countdown</h3>
-    <div id="timer">Loading...</div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 PEPEX. All rights reserved.</p>
-  </footer>
+  <div class="footer">
+    PEPEX © 2025 – Built for the Community | Telegram: <em>(coming soon)</em>
+  </div>
 </body>
 </html>
-
-<!-- styles.css -->
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0c0c0c;
-  color: #fff;
-  text-align: center;
-}
-
-.header {
-  background-color: #121212;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  height: 60px;
-}
-
-.wallet-btn {
-  background: #9945ff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.hero {
-  padding: 4rem 1rem;
-}
-
-.airdrop-btn {
-  display: inline-block;
-  background: #14f195;
-  padding: 12px 24px;
-  color: #000;
-  font-weight: bold;
-  border-radius: 16px;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.countdown {
-  margin-top: 3rem;
-  font-size: 1.5rem;
-}
-
-.footer {
-  margin-top: 4rem;
-  padding: 2rem;
-  background-color: #121212;
-  color: #777;
-  font-size: 0.9rem;
-}
-</style>
-
-<!-- script.js -->
-<script>
-// Countdown Timer
-const timer = document.getElementById('timer');
-const launchDate = new Date("April 29, 2025 00:00:00").getTime();
-
-const updateTimer = () => {
-  const now = new Date().getTime();
-  const distance = launchDate - now;
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-  if (distance < 0) {
-    timer.innerHTML = "🚀 Airdrop is Live!";
-    clearInterval(interval);
-  }
-};
-
-const interval = setInterval(updateTimer, 1000);
-updateTimer();
-
-// Phantom Wallet Connect
-const connectButton = document.getElementById("connect-wallet");
-connectButton.addEventListener("click", async () => {
-  try {
-    const resp = await window.solana.connect();
-    connectButton.innerText = resp.publicKey.toString();
-  } catch (err) {
-    console.error("Wallet connection failed", err);
-  }
-});
-</script>
