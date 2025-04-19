@@ -1,135 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PEPEX | Airdrop & Hodlers Rewards</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PEPEX - Meme to Moon</title>
   <style>
     body {
+      background-color: #0b0c10;
+      color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0e14;
-      color: #e6edf3;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #161b22;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00ff99;
     }
     header h1 {
-      font-size: 1.6rem;
-      display: flex;
-      align-items: center;
-      color: #fff;
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
+      color: #00ff99;
     }
-    header h1 img {
-      width: 42px;
-      height: 42px;
-      margin-right: 12px;
+    header p {
+      font-size: 1.2rem;
+      color: #cccccc;
     }
-    nav a {
-      color: #58a6ff;
-      margin-left: 1.5rem;
+    section {
+      padding: 40px;
+      background-color: #0f1117;
+    }
+    h2, h3 {
+      color: #00ff99;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #161b22;
+      color: #ffffff;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+    th {
+      background-color: #00ff99;
+      color: #000;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      background-color: #0b0c10;
+      color: #777;
+    }
+    .btn {
+      display: inline-block;
+      background: #00ff99;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .form {
+      max-width: 500px;
+      margin: auto;
+    }
+    .form input, .form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+    .form button {
+      background-color: #00ff99;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #00ff99;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
+    .social-links a img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      transition: transform 0.2s ease-in-out;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h2 {
-      color: #58a6ff;
-      margin-bottom: 0.5rem;
-    }
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    input, button {
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      width: 100%;
-      border-radius: 10px;
-      border: none;
-      font-size: 1rem;
-    }
-    .form-group {
-      margin-bottom: 2rem;
-    }
-    .btn {
-      background-color: #238636;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #2ea043;
-    }
-    ul {
-      margin-left: 1.5rem;
+    .social-links a:hover img {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
   <header>
-    <h1><img src="logo.png" alt="PEPEX Logo"> PEPEX Airdrop & Hodlers</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="airdrop.html">Airdrop</a>
-      <a href="holders.html">Hodlers</a>
-    </nav>
+    <img src="logo.png" alt="PEPEX Logo">
+    <h1>PEPEX</h1>
+    <p>Fueling the Memechain, One Burn at a Time 🧨</p>
+    <a class="btn" href="https://x.com/pepexplore" target="_blank">Follow us on X (ex-Twitter)</a>
+    <div class="social-links">
+      <a href="https://x.com/pepexplore" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X"></a>
+      <a href="https://instagram.com/pepex_community" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram"></a>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>🪂 Claim Free PEPEX Airdrop</h2>
-    <p>Get free PEPEX by completing the following:</p>
+  <section>
+    <h2>🧲 PEPEX Airdrop Program</h2>
+    <p>Follow the steps below to claim your PEPEX:</p>
     <ul>
-      <li>✅ Connect your wallet (coming soon)</li>
-      <li>✅ Follow us on Twitter: <strong>@pepexplore</strong></li>
-      <li>✅ Follow us on Instagram: <strong>@pepex_community</strong></li>
-      <li>✅ Submit the form below</li>
+      <li>✅ Connect your wallet</li>
+      <li>✅ Follow us on X: <strong>@pepexplore</strong></li>
+      <li>✅ Follow on Instagram: <strong>@pepex_community</strong></li>
+      <li>✅ Fill out the form below</li>
     </ul>
-
-    <div class="form-group">
-      <input type="text" id="wallet" placeholder="Solana Wallet Address">
-      <input type="text" id="twitter" placeholder="Twitter Username">
-      <input type="text" id="instagram" placeholder="Instagram Username">
-      <button class="btn" onclick="submitAirdrop()">📨 Submit Airdrop Request</button>
+    <div class="form">
+      <input type="text" placeholder="Your Solana Wallet Address">
+      <input type="text" placeholder="Twitter Username">
+      <input type="text" placeholder="Instagram Username">
+      <button>Submit Airdrop Request</button>
     </div>
 
-    <h2>🚀 Loyal Hodlers Rewards</h2>
-    <p>If you hold PEPEX tokens for 1 year, you’ll be eligible to receive:</p>
+    <h2>🎖️ Hodlers Rewards</h2>
+    <p>Holding PEPEX for one year unlocks:</p>
     <ul>
-      <li>🎨 A rare "Moon Pepe" NFT</li>
-      <li>💰 Bonus PEPEX Tokens</li>
+      <li>🎨 Exclusive NFT (Moon Pepe)</li>
+      <li>💰 Bonus PEPEX tokens</li>
     </ul>
-    <p>Rewards will be airdropped to qualifying holders.</p>
-    <button class="btn" onclick="alert('Eligibility check coming soon!')">🔍 Check Eligibility</button>
+    <button class="btn">Check Eligibility (Coming Soon)</button>
+  </section>
+
+  <section>
+    <h2>🚀 Tokenomics & Suggestions</h2>
+    <ul>
+      <li><strong>Team:</strong> 10% locked for 2 years</li>
+      <li><strong>Charity:</strong> 10% with transparency</li>
+      <li><strong>Marketing:</strong> 15% split (5% liquid + 10% vested)</li>
+      <li><strong>Holders:</strong> 30% for staking rewards</li>
+      <li><strong>Airdrop:</strong> 15% task-based</li>
+      <li><strong>Private Sale:</strong> 20% for early supporters</li>
+    </ul>
+
+    <h3>📈 PEPEX Features</h3>
+    <ul>
+      <li><strong>Smart Burn:</strong> 0.5% of all transactions monthly</li>
+      <li><strong>Hodler NFTs:</strong> 1 year = Moon Pepe NFT</li>
+    </ul>
+
+    <h3>📢 Community Marketing</h3>
+    <ul>
+      <li>Twitter: Memes & giveaways</li>
+      <li>Telegram: VIPs with 10K+ PEPEX</li>
+      <li>Reddit: Monthly AMA</li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    PEPEX © 2025 | Instagram: @pepex_community | Email: pepexplorergil@gmail.com | Telegram: (coming soon)
   </div>
-
-  <script>
-    async function submitAirdrop() {
-      const wallet = document.getElementById("wallet").value;
-      const twitter = document.getElementById("twitter").value;
-      const insta = document.getElementById("instagram").value;
-
-      if (!wallet || !twitter || !insta) {
-        alert("Please fill in all fields.");
-        return;
-      }
-
-      // In future: send to Google Form or backend
-      alert("Thanks! Your airdrop request has been received.");
-    }
-  </script>
 </body>
 </html>
