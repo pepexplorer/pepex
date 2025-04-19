@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luxury Wallet</title>
+  <!-- FontAwesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Modern Minimalist Style */
     :root {
       --gold: #D4AF37;
       --black: #121212;
@@ -16,6 +17,9 @@
       margin: 0;
       background-color: var(--gray);
       color: var(--black);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       display: flex;
@@ -54,29 +58,28 @@
       text-align: center;
       padding: 80px 20px;
       background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+      flex: 1;
     }
-    .hero h2 {
-      font-weight: 300;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 0;
+      background: white;
     }
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
+    .social-links a {
+      color: var(--black);
+      font-size: 20px;
+      transition: color 0.3s;
     }
-    .cta {
-      background: var(--black);
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      font-size: 14px;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: all 0.3s;
+    .social-links a:hover {
+      color: var(--gold);
     }
-    .cta:hover {
-      background: var(--gold);
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
@@ -97,5 +100,16 @@
     <p>Discover our exclusive collection of minimalist wallets crafted from premium Italian leather. Less is more.</p>
     <button class="cta">SHOP NOW</button>
   </section>
+
+  <!-- Social Links Section -->
+  <div class="social-links">
+    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://t.me/" target="_blank"><i class="fab fa-telegram"></i></a>
+  </div>
+
+  <footer>
+    © 2023 VÉRITÉ. All rights reserved.
+  </footer>
 </body>
 </html>
