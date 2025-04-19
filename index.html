@@ -6,91 +6,114 @@
   <title>PEPEX | Airdrop & Hodlers Rewards</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #f0f6fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0e14;
+      color: #e6edf3;
       margin: 0;
       padding: 0;
     }
     header {
       background-color: #161b22;
-      padding: 1rem;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     header h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       display: flex;
       align-items: center;
+      color: #fff;
     }
     header h1 img {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
+      width: 42px;
+      height: 42px;
+      margin-right: 12px;
     }
     nav a {
       color: #58a6ff;
-      margin-left: 1rem;
+      margin-left: 1.5rem;
       text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .container {
+      max-width: 800px;
+      margin: auto;
       padding: 2rem;
     }
     h2 {
       color: #58a6ff;
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
     }
     input, button {
-      padding: 0.6rem;
+      padding: 0.75rem;
       margin: 0.5rem 0;
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       border: none;
+      font-size: 1rem;
     }
     .form-group {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
     .btn {
       background-color: #238636;
       color: white;
+      font-weight: bold;
       cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2ea043;
+    }
+    ul {
+      margin-left: 1.5rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1><img src="logo.png" alt="PEPEX Logo"> Airdrop + Hodlers Rewards</h1>
+    <h1><img src="logo.png" alt="PEPEX Logo"> PEPEX Airdrop & Hodlers</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="airdrop.html">Airdrop</a>
       <a href="holders.html">Hodlers</a>
     </nav>
   </header>
+
   <div class="container">
-    <h2>🪂 Claim Your Free PEPEX Airdrop</h2>
-    <p>Complete the following steps to receive free PEPEX tokens:</p>
+    <h2>🪂 Claim Free PEPEX Airdrop</h2>
+    <p>Get free PEPEX by completing the following:</p>
     <ul>
-      <li>✅ Connect your wallet</li>
+      <li>✅ Connect your wallet (coming soon)</li>
       <li>✅ Follow us on Twitter: <strong>@pepexplore</strong></li>
       <li>✅ Follow us on Instagram: <strong>@pepex_community</strong></li>
-      <li>✅ Fill out the form below to get rewarded!</li>
+      <li>✅ Submit the form below</li>
     </ul>
 
     <div class="form-group">
-      <input type="text" id="wallet" placeholder="Your Solana Wallet Address">
-      <input type="text" id="twitter" placeholder="Your Twitter Handle">
-      <input type="text" id="instagram" placeholder="Your Instagram Handle">
+      <input type="text" id="wallet" placeholder="Solana Wallet Address">
+      <input type="text" id="twitter" placeholder="Twitter Username">
+      <input type="text" id="instagram" placeholder="Instagram Username">
       <button class="btn" onclick="submitAirdrop()">📨 Submit Airdrop Request</button>
     </div>
 
-    <h2>🚀 Rewards for Loyal Hodlers</h2>
-    <p>Anyone who holds PEPEX tokens for a full year will receive:</p>
+    <h2>🚀 Loyal Hodlers Rewards</h2>
+    <p>If you hold PEPEX tokens for 1 year, you’ll be eligible to receive:</p>
     <ul>
-      <li>🎨 An exclusive "Moon Pepe" NFT</li>
-      <li>💰 Or bonus PEPEX tokens</li>
+      <li>🎨 A rare "Moon Pepe" NFT</li>
+      <li>💰 Bonus PEPEX Tokens</li>
     </ul>
-    <p>Limited edition NFTs will be airdropped to long-term community members.</p>
-    <button class="btn" onclick="alert('Coming soon in the next version!')">🔍 Check Eligibility</button>
+    <p>Rewards will be airdropped to qualifying holders.</p>
+    <button class="btn" onclick="alert('Eligibility check coming soon!')">🔍 Check Eligibility</button>
   </div>
 
   <script>
@@ -104,8 +127,8 @@
         return;
       }
 
-      // Submit data to backend or Google Form here
-      alert("Request submitted! You will receive your PEPEX soon 🪂");
+      // In future: send to Google Form or backend
+      alert("Thanks! Your airdrop request has been received.");
     }
   </script>
 </body>
