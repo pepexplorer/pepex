@@ -14,20 +14,25 @@
     }
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
-    header img {
-      width: 150px;
+    header img.logo {
+      width: 180px;
       border-radius: 50%;
-      box-shadow: 0 0 20px #00ff99;
+      box-shadow: 0 0 25px #00ff99;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin: 20px 0 10px;
       color: #00ff99;
     }
-    header p {
-      font-size: 1.2rem;
+    header p.subtitle {
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header p.slogan {
+      font-size: 1.1rem;
       color: #cccccc;
     }
     .social-icons {
@@ -38,20 +43,47 @@
       display: inline-block;
     }
     .social-icons img {
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
     }
-    .subtitle {
-      font-size: 1.1rem;
-      color: #00ff99;
-      margin-top: 15px;
+    .btn {
+      display: inline-block;
+      background: #00ff99;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #00cc77;
+    }
+    .btn-claim {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 14px 28px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      border-radius: 40px;
+      text-decoration: none;
+      margin: 30px auto 0;
+      transition: background-color 0.3s;
+    }
+    .btn-claim:hover {
+      background-color: #ffaa00;
     }
     section {
       padding: 40px;
       background-color: #0f1117;
     }
-    h2 {
+    h2, h3 {
       color: #00ff99;
+    }
+    ul, p {
+      color: #cccccc;
     }
     table {
       width: 100%;
@@ -75,39 +107,14 @@
       background-color: #0b0c10;
       color: #777;
     }
-    .btn {
-      display: inline-block;
-      background: #00ff99;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-    .btn-claim {
-      display: inline-block;
-      background-color: #ffcc00;
-      color: #000;
-      padding: 10px 25px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      border-radius: 40px;
-      text-decoration: none;
-      margin: 30px auto 0;
-      transition: background-color 0.3s;
-    }
-    .btn-claim:hover {
-      background-color: #ffaa00;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="PEPEX Logo">
+    <img class="logo" src="logo.png" alt="PEPEX Logo">
     <h1>PEPEX</h1>
     <p class="subtitle">Like Bitcoin, Only 21 Million</p>
-    <p>Fueling the Memechain, One Burn at a Time 🧨</p>
+    <p class="slogan">Fueling the Memechain, One Burn at a Time 🧨</p>
     <div class="social-icons">
       <a href="https://x.com/pepexplore" target="_blank"><img src="x-icon.png" alt="X"></a>
       <a href="https://instagram.com/pepex_community" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
