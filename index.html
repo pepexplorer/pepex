@@ -5,96 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PEPEX - Meme to Moon</title>
   <style>
-    body {
-      background-color: #0b0c10;
-      color: #ffffff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+      color: #fff;
+    }
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
+      position: relative;
     }
-    header img.logo {
-      width: 180px;
+    .connect-wallet {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #00ff99;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00ff99;
+    }
+    .logo {
+      width: 220px;
       border-radius: 50%;
       box-shadow: 0 0 25px #00ff99;
     }
-    header h1 {
-      font-size: 3rem;
-      margin: 20px 0 10px;
+    h1 {
+      font-size: 3.5rem;
       color: #00ff99;
-    }
-    header p.subtitle {
-      font-size: 1.4rem;
-      color: #ffffff;
-      margin-bottom: 10px;
-    }
-    header p.slogan {
-      font-size: 1.1rem;
-      color: #cccccc;
-    }
-    .social-icons {
       margin-top: 20px;
     }
+    .subtitle {
+      font-size: 1.6rem;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .slogan {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-top: 5px;
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
     .social-icons a {
-      margin: 0 10px;
       display: inline-block;
+      margin: 0 10px;
     }
     .social-icons img {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
     }
     .btn {
       display: inline-block;
-      background: #00ff99;
-      color: #000;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background-color 0.3s;
-    }
-    .btn:hover {
-      background-color: #00cc77;
-    }
-    .btn-claim {
-      display: inline-block;
-      background-color: #ffcc00;
+      background: #ffcc00;
       color: #000;
       padding: 14px 28px;
-      font-size: 1.3rem;
-      font-weight: bold;
       border-radius: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 30px;
       text-decoration: none;
-      margin: 30px auto 0;
-      transition: background-color 0.3s;
-    }
-    .btn-claim:hover {
-      background-color: #ffaa00;
     }
     section {
-      padding: 40px;
-      background-color: #0f1117;
+      padding: 60px 20px;
+      background-color: #121212;
     }
     h2, h3 {
       color: #00ff99;
+      margin-bottom: 20px;
     }
     ul, p {
-      color: #cccccc;
+      color: #ccc;
+      margin-bottom: 10px;
+      line-height: 1.6;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      background-color: #161b22;
-      color: #ffffff;
+      margin-top: 20px;
+      background-color: #1f1f1f;
     }
     th, td {
       padding: 12px;
       border: 1px solid #333;
-      text-align: left;
+      text-align: center;
     }
     th {
       background-color: #00ff99;
@@ -111,6 +113,7 @@
 </head>
 <body>
   <header>
+    <a class="connect-wallet" href="#">Connect Wallet</a>
     <img class="logo" src="logo.png" alt="PEPEX Logo">
     <h1>PEPEX</h1>
     <p class="subtitle">Like Bitcoin, Only 21 Million</p>
@@ -118,12 +121,10 @@
     <div class="social-icons">
       <a href="https://x.com/pepexplore" target="_blank"><img src="x-icon.png" alt="X"></a>
       <a href="https://instagram.com/pepex_community" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://t.me/pepexplorers" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a>
+      <a href="#" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a>
       <a href="mailto:pepexplorergil@gmail.com"><img src="email-icon.png" alt="Email"></a>
     </div>
-    <a class="btn" href="https://x.com/pepexplore" target="_blank">Follow us on X</a>
-    <br>
-    <a class="btn-claim" href="https://claim.pepexplorer.com" target="_blank">🚀 Claim Your Airdrop</a>
+    <a class="btn" href="https://claim.pepexplorer.com" target="_blank">🚀 Claim Your Airdrop</a>
   </header>
 
   <section>
@@ -158,23 +159,31 @@
 
     <h3>💎 Unique Features of PEPEX</h3>
     <ul>
-      <li><strong>Smart Burn:</strong> 0.5% of all transactions are burned monthly – scarcity FTW 🔥</li>
-      <li><strong>Astronaut Rewards:</strong> Hold for 1 year = get exclusive NFT (Moon Pepe!) 🚀</li>
+      <li><strong>Smart Burn:</strong> 0.5% of all transactions are burned monthly 🔥</li>
+      <li><strong>Astronaut Rewards:</strong> Hold for 1 year = exclusive NFT (Moon Pepe!) 🚀</li>
     </ul>
 
     <h3>📢 Free Marketing Strategy</h3>
     <ul>
-      <li><strong>Twitter:</strong> Meme contest with #PepexToTheMoon | Retweet to win 1000 PEPEX</li>
-      <li><strong>Telegram:</strong> VIP group for holders with 10K+ PEPEX</li>
-      <li><strong>Reddit:</strong> Monthly AMA with the team</li>
+      <li><strong>Twitter:</strong> Meme contest with #PepexToTheMoon</li>
+      <li><strong>Telegram:</strong> VIP group for holders</li>
+      <li><strong>Reddit:</strong> Monthly AMA with team</li>
     </ul>
 
-    <h3>📈 Listing Soon</h3>
+    <h3>📈 Exchange Listings</h3>
     <p>PEPEX will be listed on all major exchanges soon. Stay tuned!</p>
+
+    <h3>🛒 Buy PEPEX</h3>
+    <p>You can buy PEPEX from the following DEX platforms:</p>
+    <ul>
+      <li><a href="https://raydium.io/swap/" target="_blank">Raydium</a></li>
+      <li><a href="https://jup.ag/swap" target="_blank">Jupiter</a></li>
+      <li><a href="https://orca.so" target="_blank">Orca</a></li>
+    </ul>
   </section>
 
   <div class="footer">
-    PEPEX © 2025 – Built for the Community | Telegram: <a href="https://t.me/pepexplorers" style="color: #00ff99">@pepexplorers</a>
+    PEPEX © 2025 – Built for the Community | Telegram: <em>(coming soon)</em>
   </div>
 </body>
 </html>
