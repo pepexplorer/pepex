@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PEPEX - Meme to Moon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PEPEX - A meme coin with a 21 million supply, built for fun and crypto vibes!">
+  <meta name="keywords" content="PEPEX, meme coin, crypto, tokenomics, airdrop">
+  <title>PEPEX - Meme to the Moon!</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,62 +15,121 @@
       padding: 0;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Bangers', cursive;
       background: linear-gradient(to right, #0f0f0f, #1a1a1a);
       color: #fff;
       overflow-x: hidden;
     }
     header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      position: relative;
+      background: #121212;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .logo-left {
+      width: 50px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ff99;
+      transition: transform 0.3s ease;
+    }
+    .logo-left:hover {
+      transform: scale(1.1);
+    }
+    .logo-right {
+      width: 100px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ff99;
+      transition: transform 0.3s ease;
+    }
+    .logo-right:hover {
+      transform: scale(1.05);
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #00ff99;
     }
     .connect-wallet {
-      position: absolute;
-      top: 20px;
-      right: 20px;
       background-color: #00ff99;
       color: #000;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: bold;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 1rem;
       text-decoration: none;
-      box-shadow: 0 0 15px #00ff99;
+      box-shadow: 0 0 10px #00ff99;
       transition: transform 0.3s ease;
     }
     .connect-wallet:hover {
       transform: scale(1.05);
     }
-    .logo {
-      width: 220px;
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #00ff99, #ffcc00);
+    }
+    .logo-center {
+      width: 180px;
       border-radius: 50%;
-      box-shadow: 0 0 25px #00ff99;
+      box-shadow: 0 0 20px #00ff99;
       transition: transform 0.5s ease;
     }
-    .logo:hover {
+    .logo-center:hover {
       transform: scale(1.1);
     }
     h1 {
-      font-size: 3.5rem;
-      color: #00ff99;
-      margin-top: 20px;
+      font-size: 4rem;
+      color: #fff;
+      margin: 20px 0;
+      -webkit-text-stroke: 1px black;
     }
     .subtitle {
+      font-size: 1.8rem;
+      color: #ffcc00;
+      margin-bottom: 10px;
+      -webkit-text-stroke: 1px black;
+    }
+    .hero-text {
       font-size: 1.6rem;
-      margin-top: 10px;
-      font-weight: bold;
+      color: #ffcc00;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      text-shadow: 0 0 10px #ffcc00;
+      -webkit-text-stroke: 1px black;
     }
     .slogan {
-      font-size: 1.1rem;
-      color: #ccc;
-      margin-top: 5px;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 20px;
     }
     .social-icons {
-      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
     }
     .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
       transition: transform 0.3s ease;
     }
     .social-icons a:hover {
@@ -78,14 +140,11 @@
       height: 40px;
     }
     .btn {
-      display: inline-block;
       background: #ffcc00;
       color: #000;
-      padding: 14px 28px;
-      border-radius: 40px;
+      padding: 12px 24px;
+      border-radius: 30px;
       font-size: 1.2rem;
-      font-weight: bold;
-      margin-top: 30px;
       text-decoration: none;
       transition: background 0.3s ease, transform 0.3s ease;
     }
@@ -95,20 +154,60 @@
     }
     .btn-holder {
       background: #00ffcc;
+      margin-left: 10px;
+    }
+    .buy-dex {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .buy-dex h3 {
+      color: #00ff99;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    .buy-dex a {
+      background: #00ffcc;
       color: #000;
-      margin-left: 15px;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .buy-dex a:hover {
+      transform: scale(1.05);
+    }
+    .airdrop-info {
+      text-align: center;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ff99;
+    }
+    .airdrop-info h3 {
+      color: #00ff99;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    .airdrop-info p {
+      color: #ccc;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
     section {
       padding: 60px 20px;
       background-color: #121212;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     h2, h3 {
       color: #00ff99;
       margin-bottom: 20px;
     }
-    ul, p {
+    p, ul {
       color: #ccc;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       line-height: 1.6;
     }
     table {
@@ -126,16 +225,9 @@
       background-color: #00ff99;
       color: #000;
     }
-    .footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-      background-color: #0b0c10;
-      color: #777;
-    }
     .airdrop-image {
-      width: 180px;
-      margin: 30px auto 10px;
+      width: 150px;
+      margin: 20px auto;
       display: block;
       animation: float 4s ease-in-out infinite;
     }
@@ -144,37 +236,114 @@
       50% { transform: translateY(-10px); }
       100% { transform: translateY(0); }
     }
+    .price-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #121212;
+    }
+    .countdown {
+      font-size: 2rem;
+      color: #ffcc00;
+      margin-top: 20px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #0b0c10;
+      color: #777;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .subtitle { font-size: 1.4rem; }
+      .hero-text { font-size: 1.2rem; }
+      .nav-links { gap: 10px; font-size: 1rem; }
+      .logo-center { width: 120px; }
+      .logo-right { width: 60px; }
+      .connect-wallet { padding: 6px 15px; font-size: 0.9rem; }
+      .buy-dex a { display: block; margin: 10px auto; }
+      .nav-left { flex-direction: column; gap: 10px; }
+      .airdrop-info { padding: 15px; }
+      nav { flex-direction: column; gap: 10px; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <a class="connect-wallet" href="https://claim.pepexplorer.com" target="_blank">Connect Wallet</a>
-    <img class="logo" src="logo.png" alt="PEPEX Logo" data-aos="zoom-in">
-    <h1 data-aos="fade-down">PEPEX</h1>
-    <p class="subtitle" data-aos="fade-up">Like Bitcoin, Only 21 Million</p>
-    <p class="slogan" data-aos="fade-up">Fueling the Memechain, One Burn at a Time 🧨</p>
-    <div class="social-icons" data-aos="fade-up">
-      <a href="https://x.com/pepexplore" target="_blank"><img src="x-icon.png" alt="X"></a>
-      <a href="https://instagram.com/pepex_community" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://t.me/pepexplorers" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a>
-      <a href="mailto:pepexplorergil@gmail.com"><img src="email-icon.png" alt="Email"></a>
-    </div>
-    <a class="btn" href="https://claim.pepexplorer.com" target="_blank">🚀 Claim Your Airdrop</a>
-    <a class="btn btn-holder" href="#">👑 I'm a Holder</a>
-    <img class="airdrop-image" src="airdrop-chute.png" alt="Airdrop">
+    <nav>
+      <div class="nav-left">
+        <img class="logo-left" src="/images/logo-left.png" alt="PEPEX Left Logo" data-aos="fade-right">
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#tokenomics">Tokenomics</a>
+          <a href="#community">Community</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <img class="logo-right" src="/images/logo-right.png" alt="PEPEX Right Logo" data-aos="fade-left">
+        <a class="connect-wallet" href="#">Connect Wallet</a>
+      </div>
+    </nav>
   </header>
 
-  <section data-aos="fade-up">
-    <h2>🚀 Tokenomics Review & Community Suggestions</h2>
+  <section id="home" class="hero">
+    <img class="logo-center" src="/images/logo-center.png" alt="PEPEX Center Logo" data-aos="zoom-in">
+    <h1 data-aos="fade-down">PEPEX</h1>
+    <p class="subtitle" data-aos="fade-up">Like Bitcoin, Only 21 Million!</p>
+    <p class="hero-text" data-aos="fade-up">
+      PEPEX is the next BTC on Sol!<br>
+      Only 21 million Tokens.<br>
+      Once they're gone - that's it.<br>
+      Fast. Scarce. Meme-fueled.<br>
+      Buy before it moons.<br>
+      Hold before it's gold.
+    </p>
+    <p class="slogan" data-aos="fade-up">Fueling the Memechain, One Burn at a Time! 🧨</p>
+    <div class="social-icons" data-aos="fade-up">
+      <a href="https://x.com/pepexplore" target="_blank"><img src="/images/x-icon.png" alt="X"></a>
+      <a href="https://instagram.com/pepex_community" target="_blank"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://t.me/pepexcommunity_info" target="_blank"><img src="/images/telegram-icon.png" alt="Telegram"></a>
+      <a href="mailto:pepexplorergil@gmail.com"><img src="/images/email-icon.png" alt="Email"></a>
+    </div>
+    <div data-aos="fade-up">
+      <a class="btn" href="https://x.com/intent/tweet?text=Join%20the%20PEPEX%20Airdrop!%20%23PepexToTheMoon" target="_blank">🚀 Claim Airdrop</a>
+      <a class="btn btn-holder" href="https://t.me/pepexplorers" target="_blank">👑 I'm a Holder</a>
+    </div>
+    <div class="buy-dex" data-aos="fade-up">
+      <h3>Buy PEPEX on DEX</h3>
+      <a href="https://raydium.io/swap/" target="_blank">Raydium</a>
+      <a href="https://jup.ag/swap" target="_blank">Jupiter</a>
+      <a href="https://orca.so" target="_blank">Orca</a>
+    </div>
+    <div class="airdrop-info" data-aos="fade-up">
+      <h3>How to Join the PEPEX Airdrop</h3>
+      <p>Want free PEPEX tokens? Here's how to hop in:<br>
+        1. Follow us on <a href="https://x.com/pepexplore" target="_blank">X</a>, <a href="https://instagram.com/pepex_community" target="_blank">Instagram</a>, and <a href="https://t.me/pepexplorers" target="_blank">Telegram</a>.<br>
+        2. Post or tweet with the hashtag <strong>#PepexToTheMoon</strong>.<br>
+        3. Invite your friends, share the post, or tag them in the comments!<br>
+        The more you meme, the bigger your airdrop! 🚀
+      </p>
+    </div>
+    <img class="airdrop-image" src="/images/airdrop-chute.png" alt="Airdrop" data-aos="fade-up">
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>🚀 What is PEPEX?</h2>
+    <p>PEPEX is a meme coin built for laughs and crypto vibes! With a limited supply of 21 million tokens, we're here to bring fun to the blockchain. Join us and blast off to the moon!</p>
+  </section>
+
+  <section id="tokenomics" data-aos="fade-up">
+    <h2>📊 Tokenomics & Community Suggestions</h2>
     <ul>
-      <li><strong>Team (20% = 4.2M):</strong> Suggested: 10% + 2 years lock 🔒</li>
-      <li><strong>Charity (10% = 2.1M):</strong> Excellent! → Transparent wallet + donation reports 📜</li>
+      <li><strong>Team (20% = 4.2M):</strong> Suggested: 10% + 2-year lock 🔒</li>
+      <li><strong>Charity (10% = 2.1M):</strong> Awesome! → Transparent wallet + donation reports 📜</li>
       <li><strong>Marketing (20% = 4.2M):</strong> Better: 10% liquid + 10% vested monthly</li>
       <li><strong>Holders (20% = 4.2M):</strong> Should increase → 30% with staking rewards 💰</li>
       <li><strong>Airdrop (30% = 6.3M):</strong> Risky → Recommend: 15% airdrop + 15% private sale</li>
     </ul>
 
-    <h3>🎯 Suggested Optimized Distribution:</h3>
+    <h3>🎯 Suggested Optimized Distribution</h3>
     <table>
       <thead>
         <tr>
@@ -196,36 +365,129 @@
 
     <h3>💎 Unique Features of PEPEX</h3>
     <ul>
-      <li><strong>Smart Burn:</strong> 0.5% of all transactions are burned monthly 🔥</li>
+      <li><strong>Smart Burn:</strong> 0.5% of transactions burned monthly 🔥</li>
       <li><strong>Astronaut Rewards:</strong> Hold for 1 year = exclusive NFT (Moon Pepe!) 🚀</li>
     </ul>
 
     <h3>📢 Free Marketing Strategy</h3>
     <ul>
-      <li><strong>Twitter:</strong> Meme contest with #PepexToTheMoon</li>
+      <li><strong>X:</strong> Meme contest with #PepexToTheMoon</li>
       <li><strong>Telegram:</strong> VIP group for holders</li>
       <li><strong>Reddit:</strong> Monthly AMA with team</li>
     </ul>
 
     <h3>📈 Exchange Listings</h3>
-    <p>PEPEX will be listed on all major exchanges soon. Stay tuned!</p>
+    <p>PEPEX will hit major exchanges soon. Stay tuned!</p>
+  </section>
 
-    <h3>🛒 Buy PEPEX</h3>
-    <p>You can buy PEPEX from the following DEX platforms:</p>
-    <ul>
-      <li><a href="https://raydium.io/swap/" target="_blank">Raydium</a></li>
-      <li><a href="https://jup.ag/swap" target="_blank">Jupiter</a></li>
-      <li><a href="https://orca.so" target="_blank">Orca</a></li>
-    </ul>
+  <section id="price" class="price-section" data-aos="fade-up">
+    <h2>📈 Live Price</h2>
+    <p>Coming Soon!</p>
+    <div class="countdown" id="countdown">7 Days Left</div>
+  </section>
+
+  <section id="community" data-aos="fade-up">
+    <h2>🌐 Join the PEPEX Community!</h2>
+    <p>Hop into our socials and start memeing!</p>
+    <div class="social-icons">
+      <a href="https://x.com/pepexplore" target="_blank"><img src="/images/x-icon.png" alt="X"></a>
+      <a href="https://instagram.com/pepex_community" target="_blank"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+      <a href="https://t.me/pepexplorers" target="_blank"><img src="/images/telegram-icon.png" alt="Telegram"></a>
+      <a href="mailto:pepexplorergil@gmail.com"><img src="/images/email-icon.png" alt="Email"></a>
+    </div>
   </section>
 
   <div class="footer">
-    PEPEX © 2025 – Built for the Community | Telegram: <a href="https://t.me/pepexplorers" target="_blank">@pepexplorers</a>
+    PEPEX © 2025 – Built for the Meme Community | Telegram: <a href="https://t.me/pepexplorers" target="_blank">@pepexplorers</a>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.95.3/lib/index.browser.esm.js"></script>
   <script>
     AOS.init();
+
+    // Wallet Connection
+    async function connectWallet() {
+      const connectButton = document.querySelector('.connect-wallet');
+      try {
+        // Try Ethereum (MetaMask, Trust Wallet, etc.)
+        if (window.ethereum) {
+          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+          const address = accounts[0];
+          connectButton.textContent = `Connected: ${address.slice(0, 6)}...${address.slice(-4)}`;
+          sendWalletToServer(address, 'ethereum');
+        }
+        // Try Solana (Phantom, etc.)
+        else if (window.solana && window.solana.isPhantom) {
+          const response = await window.solana.connect();
+          const address = response.publicKey.toString();
+          connectButton.textContent = `Connected: ${address.slice(0, 6)}...${address.slice(-4)}`;
+          sendWalletToServer(address, 'solana');
+          checkTokenBalance(address);
+        } else {
+          alert('Please install MetaMask or Phantom!');
+        }
+      } catch (error) {
+        console.error('Connection failed:', error);
+        alert('Wallet connection failed. Try again!');
+      }
+    }
+
+    // Send wallet address to server
+    async function sendWalletToServer(address, chain) {
+      try {
+        const response = await fetch('/api/save-wallet.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ address, chain })
+        });
+        if (!response.ok) throw new Error('Failed to save wallet');
+        console.log('Wallet saved:', address);
+      } catch (error) {
+        console.error('Error saving wallet:', error);
+      }
+    }
+
+    // Check token balance (Solana)
+    async function checkTokenBalance(address) {
+      try {
+        const connection = new solanaWeb3.Connection('https://api.mainnet-beta.solana.com');
+        const publicKey = new solanaWeb3.PublicKey(address);
+        const tokenMintAddress = new solanaWeb3.PublicKey('AUYDYjFGrgUJoSV2ZnvFjpE9WhT7Gq44hTFWoHe1qrN');
+        const tokenAccounts = await connection.getTokenAccountsByOwner(publicKey, { mint: tokenMintAddress });
+        let balance = 0;
+        for (const account of tokenAccounts.value) {
+          const accountInfo = await connection.getTokenAccountBalance(account.pubkey);
+          balance += accountInfo.value.uiAmount;
+        }
+        const holderButton = document.querySelector('.btn-holder');
+        holderButton.textContent = `Holder: ${balance} PEPEX`;
+      } catch (error) {
+        console.error('Error checking balance:', error);
+        const holderButton = document.querySelector('.btn-holder');
+        holderButton.textContent = `Holder: Error`;
+      }
+    }
+
+    document.querySelector('.connect-wallet').addEventListener('click', connectWallet);
+
+    // Countdown Timer
+    const countdownElement = document.getElementById('countdown');
+    const endDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+    function updateCountdown() {
+      const now = new Date();
+      const timeLeft = endDate - now;
+      if (timeLeft <= 0) {
+        countdownElement.textContent = 'Launched!';
+        return;
+      }
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
